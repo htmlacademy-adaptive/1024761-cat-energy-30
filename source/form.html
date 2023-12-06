@@ -41,7 +41,7 @@
   <main class="page-container">
     <h1 class="page-container__title">Подбор программы</h1>
     <p class="page-container__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="page-container__form food-program-form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="food-program-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="food-program-form__fieldset about-cat-fieldset">
         <legend class="visually-hidden">Данные о животном</legend>
         <label class="food-program-form__label form-field-cat">
@@ -63,7 +63,7 @@
           <li class="food-program-form__item">
             <label class="food-program-form__label radio-field">
               <input class="radio-field__control" type="radio" name="target" value="slim" checked>
-              <span class="form-field__label">Похудение</span>
+              <span class="radio-field__label">Похудение</span>
             </label>
           </li>
           <li class="food-program-form__item">
@@ -80,17 +80,16 @@
           </li>
         </ul>
       </fieldset>
-
       <fieldset class="food-program-form__fieldset about-owner-fieldset">
         <legend class="food-program-form__legend">Контактные данные (владельца кота)</legend>
         <label class="food-program-form__label form-field-owner">
           <span class="form-field-owner__label">email:*</span>
-          <input class="form-field__control input-owner" type="text" name="owner-name"
+          <input class="form-field-owner__control input-owner" type="text" name="owner-name"
             placeholder="kuklachev@gmail.com">
         </label>
         <label class="food-program-form__label form-field-owner">
           <span class="form-field-owner__label">телефон:</span>
-          <input class="form-field__control input-phone" type="number" name="owner-phone"
+          <input class="form-field-owner__control input-phone" type="number" name="owner-phone"
             placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
@@ -98,7 +97,7 @@
         <legend class="food-program-form__legend">Комментарий</legend>
         <label class="food-program-form__label form-field-comment">
           <span class="visually-hidden">О коте</span>
-          <textarea class="form-field__control textarea-comment" name="actual-cat"
+          <textarea class="form-field-comment__control textarea-comment" name="actual-cat"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
@@ -108,29 +107,29 @@
           <li class="food-program-form__item">
             <label class="food-program-form__label checkbox-field">
               <input class="checkbox-field__control" type="checkbox" name="sugar" checked>
-              <span class="form-field__label">Сахарозаменитель</span>
+              <span class="checkbox-field__label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="food-program-form__item">
             <label class="food-program-form__label checkbox-field">
               <input class="checkbox-field__control" type="checkbox" name="water">
-              <span class="form-field__label">Питьевая вода</span>
+              <span class="checkbox-field__label">Питьевая вода</span>
             </label>
           </li>
           <li class="food-program-form__item">
             <label class="food-program-form__label checkbox-field">
               <input class="checkbox-field__control" type="checkbox" name="milk">
-              <span class="form-field__label">Молоко</span>
+              <span class="checkbox-field__label">Молоко</span>
             </label>
           </li>
           <li class="food-program-form__item">
             <label class="food-program-form__label checkbox-field">
               <input class="checkbox-field__control" type="checkbox" name="vitamins">
-              <span class="form-field__label">Витамины</span>
+              <span class="checkbox-field__label">Витамины</span>
             </label>
           </li>
         </ul>
-        <button class="food-program-form_button button" type="submit">Отправить заявку</button>
+        <button class="food-program-form__button button" type="submit">Отправить заявку</button>
       </fieldset>
       <p>* - Обязательные поля</p>
     </form>

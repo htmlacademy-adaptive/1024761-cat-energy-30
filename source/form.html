@@ -12,9 +12,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-header-link" href="/">
-      <img class="main-header__logo-icon" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кот Энерджи">
-      <img class="main-header__logo-words" src="images/icons/logo-words.svg" width="101" height="18" alt="Кот Энерджи">
+    <a class="main-header__logo main-header-link" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/icons/logo-pic-desk.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/icons/logo-pic-tablet.svg" width="60" height="50">
+        <img class="main-header__logo-icon" src="images/icons/logo-pic-mobile.svg" width="33" height="118" alt="Кот Энерджи">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/icons/logo-words-desk.svg" width="118" height="21">
+        <img class="main-header__logo-words" src="images/icons/logo-words-mobile-tablet.svg" width="101" height="18"
+          alt="Кот Энерджи">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -37,7 +45,7 @@
   </header>
 
   <main class="page-container">
-    <h1 class="page-container__title">Подбор программы</h1>
+    <h1 class="page-container__title title-inner">Подбор программы</h1>
     <p class="page-container__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__fieldset">

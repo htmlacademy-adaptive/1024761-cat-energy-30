@@ -1,0 +1,27 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85); 
+  color: #ffffff; 
+  font-family: $font-family-secondary;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hero__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; 
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.hero__link button {
+  
+}

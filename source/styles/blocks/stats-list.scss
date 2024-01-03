@@ -1,6 +1,6 @@
 .stats-list__number {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family-secondary;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -13,7 +13,7 @@
 
 .stats-list__price {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; 

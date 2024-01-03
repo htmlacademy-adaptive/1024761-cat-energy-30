@@ -1,7 +1,7 @@
 .hero {
   background-color: rgba(104, 183, 56, 0.85); 
   color: #ffffff; 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-family-secondary;
 }
 
 .hero__title {
@@ -10,7 +10,6 @@
   margin: 0;
   text-align: center;
   margin-bottom: 25px;
-  text-transform: uppercase;
 }
 
 .hero__slogan {
@@ -21,4 +20,8 @@
   margin: 0;
   margin-bottom: 29px;
   text-align: center;
+}
+
+.hero__link button {
+  
 }

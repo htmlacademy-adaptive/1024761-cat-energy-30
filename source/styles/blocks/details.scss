@@ -5,3 +5,39 @@
   font-weight: 400;
   line-height: 40px;
 }
+
+.details__item {
+  padding-left: 80px;
+}
+
+.details__item--sheet {
+  background-image: url("../../images/icons/stack.svg#leaf");
+  background-color: $bg-basic-green;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.details__item--powder {
+  background-image: url("../../images/icons/stack.svg#powder");
+  background-color: $bg-basic-green;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 26px 29px;
+}
+
+.details__item--cutlery {
+  background-image: url("../../images/icons/stack.svg#eat");
+  background-color: $bg-basic-green;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+}
+
+.details__item--clock {
+  background-image: url("../../images/icons/stack.svg#clock");
+  background-color: $bg-basic-green;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+}

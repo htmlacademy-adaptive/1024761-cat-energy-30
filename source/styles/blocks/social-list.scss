@@ -1,0 +1,53 @@
+
+.social-list__link {
+  display: block;
+  height: 28px;
+  width: 22px;
+  
+}
+
+.social-list__link--vk {
+  background-color: #666666;
+  mask-image: url("../../images/icons/stack.svg#vk");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.social-list__link--vk:hover {
+  background-color: #68B738;
+}
+
+.social-list__link--vk:active {
+  opacity: 0.3;
+}
+
+.social-list__link--youtube {
+  background-color: #666666;
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.social-list__link--youtube:hover {
+  background-color: #68B738;
+}
+
+.social-list__link--youtube:active {
+  opacity: 0.3;
+}
+
+.social-list__link--telegram {
+  background-color: #666666;
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.social-list__link--telegram:hover {
+  background-color: #68B738;
+}
+
+.social-list__link--telegram:active {
+  opacity: 0.3;
+}
+

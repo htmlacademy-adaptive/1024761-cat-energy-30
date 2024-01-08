@@ -1,11 +1,27 @@
 .program__title {
+  margin: 0;
   font-family: $font-family-secondary;
   font-size: 24px;
+  line-height: 37px;
   font-style: normal;
-  line-height: 37px; 
   text-transform: uppercase;
   color: #000000;
-  font-weight: 400;
+  font-weight: 400; 
+  padding-left: 70px;
+}
+
+.program__title--slim {
+  background-image: url("../../images/icons/stack.svg#cat_sit_mobile");
+  background-repeat: no-repeat;
+  background-size: 53px 50px;
+  background-position: left;
+}
+
+.program__title--pro {
+  background-image: url("../../images/icons/stack.svg#cat_go_mobile");
+  background-repeat: no-repeat;
+  background-size: 50px 67px;
+  background-position: left;
 }
 
 .program__description {
@@ -19,5 +35,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  padding-right: 39px;
+  background-image: url("../../images/icons/stack.svg#arrow");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-position: right;
 }
+

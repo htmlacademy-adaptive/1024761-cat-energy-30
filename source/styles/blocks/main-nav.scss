@@ -1,0 +1,31 @@
+
+.main-nav {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.main-nav__wrapper {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  } 
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+}

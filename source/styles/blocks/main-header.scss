@@ -1,0 +1,27 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  width: 279px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    width: 704px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 59px;
+    width: 1220px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+

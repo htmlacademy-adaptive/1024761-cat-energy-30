@@ -41,3 +41,18 @@
   background-repeat: no-repeat;
   background-size: 26px 31px;
 }
+
+.details__list {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 20px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 248px);
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 248px);
+    row-gap: 78px;
+  }
+}

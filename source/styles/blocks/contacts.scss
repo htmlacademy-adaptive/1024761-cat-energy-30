@@ -13,3 +13,22 @@
   font-weight: 400;
   line-height: 20px;
 }
+
+.contacts__text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__offer {
+  width: 140px;
+  @media(min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
+.contacts__address {
+  width: 140px;
+  @media(min-width: $tablet-width) {
+    width: 157px;
+  }
+}

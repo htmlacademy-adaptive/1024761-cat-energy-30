@@ -3,3 +3,18 @@
   line-height: 20px;
   color: #444444;
 }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.copyright:hover path {
+  fill: #68B738;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}

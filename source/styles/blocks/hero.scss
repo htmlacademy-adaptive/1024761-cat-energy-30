@@ -2,6 +2,13 @@
   background-color: rgba(104, 183, 56, 0.85); 
   color: #ffffff; 
   font-family: $font-family-secondary;
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+  }
 }
 
 .hero__title {
@@ -22,6 +29,3 @@
   text-align: center;
 }
 
-.hero__link button {
-  
-}

@@ -10,4 +10,21 @@
 .other-product__wrapper {
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-product {
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 400px 225px;
+    grid-template-rows: auto;   
+  }
+  @media(min-width: $desktop-width) {
+    width: 895px;
+  }
+}
+
+.other-product__link {
+  grid-column: 2 span;
 }

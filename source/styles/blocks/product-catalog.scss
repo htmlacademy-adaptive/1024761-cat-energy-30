@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 280px;
   justify-items: center;
+  padding: 0;
   @media(min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
@@ -11,6 +12,6 @@
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 63px;
-  
   }
 }
+

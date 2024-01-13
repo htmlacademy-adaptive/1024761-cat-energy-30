@@ -15,9 +15,11 @@
 }
 
 .extra-products__list {
+  padding: 0;
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    
 }
   @media(min-width: $desktop-width) {
     width: 895px;

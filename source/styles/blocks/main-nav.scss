@@ -4,28 +4,15 @@
   outline-offset: -5px;
 }
 
-.main-nav__wrapper {
-  display: none;
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.main-nav__toggle {
-  display: block;
-  width: 24px;
-  height: 24px;
-  @media (min-width: $tablet-width) {
-    display: none;
-  } 
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  width: 280px;
+  align-items: center;
+ 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
   }
- 
 }

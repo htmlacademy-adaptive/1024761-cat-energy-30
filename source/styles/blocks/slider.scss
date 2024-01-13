@@ -15,6 +15,9 @@
   border: none;
 }
 
-.slider__range {
-  display: flex;
+
+.slider__container {
+  @media(min-width: $desktop-width) {
+    display: flex;
+  }
 }

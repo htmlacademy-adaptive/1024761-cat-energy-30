@@ -12,38 +12,41 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-header-link" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo_pic_desk.svg" width="70" height="59"
-          type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo_pic_tablet.svg" width="60" height="50"
-          type="image/svg+xml">
-        <img class="main-header__logo-icon" src="images/logo_pic_mobile.svg" width="33" height="38" alt="Кот Энерджи">
-      </picture>
-      <img class="main-header__logo-words" src="images/logo_words.svg" width="101" height="18" alt="Кот Энерджи">
-    </a>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav">
-
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="/">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__container container">
+      <a class="main-header__logo main-header-link" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo_pic_desk.svg" width="70" height="59"
+            type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo_pic_tablet.svg" width="60" height="50"
+            type="image/svg+xml">
+          <img class="main-header__logo-icon" src="images/logo_pic_mobile.svg" width="33" height="38" alt="Кот Энерджи">
+        </picture>
+      </a>
+      <a class="main-header__logo main-header-link">
+        <img class="main-header__logo-words" src="images/logo_words.svg" width="101" height="18" alt="Кот Энерджи">
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="/">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main class="page-container">
+  <main class="page-container container">
     <h1 class="page-container__title title-inner">Подбор программы</h1>
     <p class="page-container__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -91,14 +94,14 @@
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <label class="form__label form__label--icon">
           <span class="form__field-label">email:*</span>
-          <input class="form__control" type="email" name="owner-name" placeholder="kuklachev@gmail.com">
+          <input class="form__control form__control--email" type="email" name="owner-name" placeholder="kuklachev@gmail.com">
         </label>
         <label class="form__label form__label--icon">
           <span class="form__field-label">телефон:</span>
-          <input class="form__control" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+          <input class="form__control form__control--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--textarea ">
+      <fieldset class="form__fieldset form__fieldset--textarea">
         <legend class="form__legend">Комментарий</legend>
         <label class="form__label">
           <span class="visually-hidden">О коте</span>
@@ -143,20 +146,20 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__contact contacts">
-      <div class="contacts__text">
-        <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">
-          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="contacts__city">Санкт-Петербург</span>
-        </address>
-      </div>
+    <div class="main-footer__contacts footer-contacts container">
+      <p class="footer-contacts__offer">приглашаем к сотрудничеству дилеров!</p>
+      <address class="footer-contacts__address">
+        <span class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="footer-contacts__city">Санкт-Петербург</span>
+      </address>
+    </div>
+    <div class="footer-contacts__map">
       <iframe class="contacts__iframe"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A287ca1fbac90ef6eb74745daca236be20b5f34b179a218395c70be810c513801&amp;source=constructor"
         width="320" height="362" title="Карта."></iframe>
     </div>
 
-    <div class="main-footer__social footer-social">
+    <div class="main-footer__social footer-social container">
       <a class="footer-social__link" href="index.html">
         <img class="footer-social__logo" src="images/logo_footer.svg" width="128" height="24"
           alt="Логотип Кот Энерджи.">
@@ -178,7 +181,7 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__words">HTML Academy</p>
         <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -188,6 +191,7 @@
         </svg>
       </a>
     </div>
+
   </footer>
 </body>
 

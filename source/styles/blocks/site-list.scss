@@ -6,4 +6,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  @media(min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }

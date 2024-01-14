@@ -1,15 +1,13 @@
 
-.main-nav {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
-}
-
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   padding: 0;
   width: 280px;
   align-items: center;
+  margin: 0;
  
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,6 +15,3 @@
   }
 }
 
-.main-nav__wrapper {
-  display: none;
-}

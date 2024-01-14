@@ -14,19 +14,25 @@
 <body class="page__body">
   <header class="main-header container">
     <div class="main-header__container">
-      <a class="main-header__logo main-header-link" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo_pic_desk.svg" width="70" height="59"
-            type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo_pic_tablet.svg" width="60" height="50"
-            type="image/svg+xml">
-          <img class="main-header__logo-icon" src="images/logo_pic_mobile.svg" width="33" height="38" alt="Кот Энерджи">
-        </picture>
-      </a>
-      <a class="main-header__logo main-header-link">
-        <img class="main-header__logo-words" src="images/logo_words.svg" width="101" height="18" alt="Кот Энерджи">
-      </a> 
-      <nav class="main-nav">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo main-header-link" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo_pic_desk.svg" width="70" height="59"
+              type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo_pic_tablet.svg" width="60" height="50"
+              type="image/svg+xml">
+            <img class="main-header__logo-icon" src="images/logo_pic_mobile.svg" width="33" height="38"
+              alt="Кот Энерджи">
+          </picture>
+        </a>
+        <a class="main-header__logo main-header-link">
+          <img class="main-header__logo-words" src="images/logo_words.svg" width="101" height="18" alt="Кот Энерджи">
+        </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -41,9 +47,6 @@
           </ul>
         </div>
       </nav>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </div>
   </header>
 
@@ -171,11 +174,11 @@
         </address>
       </div>
       <div class="footer-contacts__map">
-        <iframe class="contacts__iframe"
+        <iframe class="footer-contacts__iframe"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A287ca1fbac90ef6eb74745daca236be20b5f34b179a218395c70be810c513801&amp;source=constructor"
           width="320" height="362" title="Карта."></iframe>
       </div>
-  
+
       <div class="main-footer__social footer-social container">
         <a class="footer-social__link" href="index.html">
           <img class="footer-social__logo" src="images/logo_footer.svg" width="128" height="24"
@@ -208,7 +211,6 @@
           </svg>
         </a>
       </div>
-  
     </footer>
   </main>
 </body>

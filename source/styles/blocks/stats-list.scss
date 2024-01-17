@@ -9,6 +9,8 @@
 .stats-list__description {
   font-size: 12px;
   line-height: 12px;
+  position: absolute;
+  top: 47px
 }
 
 .stats-list__price {
@@ -23,8 +25,11 @@
 .stats-list {
   display: grid;
   grid-template-columns: repeat(2, 124px);
-  column-gap: 32px;
+  gap: 32px;
   justify-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
   @media(min-width: $tablet-width) {
     grid-template-columns: 162px 162px 1fr;
     column-gap: 43px;
@@ -37,8 +42,42 @@
   }
 }
 
+.stats-list__item {
+  position: relative;
+}
+
+.stats-list__number {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border: solid 1px #cdcdcd;
+  border-radius: 5px;
+}
+
+.stats-list__number--weight {
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.stats-list__number--time {
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+.stats-list__description--time {
+  width: 80px;
+  left: 21px;
+}
+
+.stats-list__description--weight {
+  width: 77px;
+  left: 22px;  
+}
+
 .stats-list__price {
   grid-column: span 2;
+  display: flex;
+  width: 188px;
+  justify-content: space-around;
   @media(min-width: $tablet-width) {
     grid-column: 3 / 4;
   }
@@ -50,6 +89,9 @@
 
 .stats-list__description {
   margin: 0;
+  position: absolute;
+  text-align: center;
+  background-color: #eaeaea;
 }
 
 .stats-list__price-description {

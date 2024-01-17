@@ -1,8 +1,8 @@
 .main-header__container {
   min-height: 65px;
   width: 280px;
-
-   @media (min-width: $tablet-width) {
+  position: relative;
+  @media (min-width: $tablet-width) {
     min-height: 50px; 
   }
   @media (min-width: $desktop-width) {

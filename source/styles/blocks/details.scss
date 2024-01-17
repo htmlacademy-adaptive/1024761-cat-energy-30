@@ -9,38 +9,39 @@
 }
 
 .details__item {
-  padding-left: 80px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 60px 1fr;
 }
 
-.details__item--sheet {
-  background-image: url("../../images/icons/stack.svg#leaf");
+.details__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
   background-color: $bg-basic-green;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
+
+}
+
+.details__item--sheet::before {
+  background-image: url("../../images/icons/stack.svg#leaf");
   background-size: 30px 32px;
 }
 
-.details__item--powder {
+.details__item--powder::before {
   background-image: url("../../images/icons/stack.svg#powder");
-  background-color: $bg-basic-green;
-  background-position: left;
-  background-repeat: no-repeat;
   background-size: 26px 29px;
 }
 
-.details__item--cutlery {
+.details__item--cutlery::before {
   background-image: url("../../images/icons/stack.svg#eat");
-  background-color: $bg-basic-green;
-  background-position: left;
-  background-repeat: no-repeat;
   background-size: 25px 30px;
 }
 
-.details__item--clock {
+.details__item--clock::before {
   background-image: url("../../images/icons/stack.svg#clock");
-  background-color: $bg-basic-green;
-  background-position: left;
-  background-repeat: no-repeat;
   background-size: 26px 31px;
 }
 

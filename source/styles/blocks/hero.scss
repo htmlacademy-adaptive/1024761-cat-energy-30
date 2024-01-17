@@ -1,5 +1,6 @@
 .hero {
-  background-color: rgba(104, 183, 56, 0.85); 
+  background-image: linear-gradient($bg-basic-green 75%, #ffffff 25%); 
+  opacity: 0.85;
   color: #ffffff; 
   font-family: $font-family-secondary;
   padding-top: 27px;

@@ -3,11 +3,16 @@
   font-family: $font-family-secondary;
   font-size: 24px;
   line-height: 37px;
-  font-style: normal;
   text-transform: uppercase;
   color: #000000;
   font-weight: 400; 
   padding-left: 70px;
+  margin-bottom: 29px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;  
+    padding-left: 0;
+  }
 }
 
 .program__box--slim {
@@ -15,6 +20,10 @@
   background-repeat: no-repeat;
   background-size: 53px 50px;
   background-position: left 20px top 18px;
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position: right 63px top 91px;
+  }
 }
 
 .program__box--pro {
@@ -22,11 +31,23 @@
   background-repeat: no-repeat;
   background-size: 50px 67px;
   background-position: left 20px top 11px;
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    background-position: right 29px top 81px;
+  }
+
 }
 
 .program__description {
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 38px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    width: 340px;
+  }
 }
 
 .program__description::after {
@@ -36,7 +57,9 @@
   height: 1px;
   background-color:#D9D9D9;
   margin-top: 23px;
-
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .program__link {
@@ -54,6 +77,11 @@
   background-repeat: no-repeat;
   background-size: 24px 12px;
   background-position: right;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 165px;
+    padding-right: 57px;
+  }
 }
 
 .program__wrapper {
@@ -63,6 +91,7 @@
   margin-bottom: 20px;
   @media (min-width: $tablet-width) {
     gap: 30px;
+    margin-bottom: 45px;
   }
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -74,12 +103,7 @@
   width: 100%;
   background-color: $bg-basic-grey;
   padding: 24px 20px 18px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
 }
-
-.program__title {
-  margin-bottom: 29px;
-}
-
-.program__description {
-  margin-bottom: 38px;
 }

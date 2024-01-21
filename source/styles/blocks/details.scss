@@ -1,3 +1,10 @@
+.details {
+  @media (min-width: $tablet-width) {
+  padding-bottom: 47px;
+  border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .details__title {
   color: #000000;
   font-family: $font-family-secondary;
@@ -6,12 +13,41 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+}
+
+.details__list {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 49px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 246px);
+    row-gap: 77px;
+    column-gap: 138px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 80px;
+  }
 }
 
 .details__item {
   display: grid;
   gap: 20px;
   grid-template-columns: 60px 1fr;
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr;
+    gap: 31px;
+  }
 }
 
 .details__item::before {
@@ -25,9 +61,21 @@
 
 }
 
+.details__item--sheet {
+  @media (min-width: $tablet-width) {
+  width: 204px;
+}
+}
+
 .details__item--sheet::before {
   background-image: url("../../images/icons/stack.svg#leaf");
   background-size: 30px 32px;
+}
+
+.details__item--powder {
+  @media (min-width: $tablet-width) {
+  width: 224px;
+}
 }
 
 .details__item--powder::before {
@@ -35,9 +83,21 @@
   background-size: 26px 29px;
 }
 
+.details__item--cutlery {
+  @media (min-width: $tablet-width) {
+  width: 207px;
+}
+}
+
 .details__item--cutlery::before {
   background-image: url("../../images/icons/stack.svg#eat");
   background-size: 25px 30px;
+}
+
+.details__item--clock {
+  @media (min-width: $tablet-width) {
+  width: 245px;
+}
 }
 
 .details__item--clock::before {
@@ -45,20 +105,9 @@
   background-size: 26px 31px;
 }
 
-.details__list {
-  display: grid;
-  grid-template-columns: 280px;
-  gap: 20px;
-  padding: 0;
-  margin-bottom: 49px;
+.details__description {
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 246px);
-    row-gap: 37px;
-    column-gap: 138px;
-  }
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 40px;
-    column-gap: 80px;
-  }
+  font-size: 16px;
+  line-height: 24px;
+}
 }

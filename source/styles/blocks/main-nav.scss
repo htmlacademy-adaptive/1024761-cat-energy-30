@@ -13,4 +13,8 @@
     position: static;
     width: 436px;
   }
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+    width: 475px;
+}
 }

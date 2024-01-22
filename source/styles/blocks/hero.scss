@@ -10,10 +10,12 @@
     background-image: none;
     color: #000000;
     margin-bottom: 0;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+    padding-top: 29px;
   }
 }
 
@@ -31,6 +33,11 @@
     margin-left: 90px;
     margin-bottom: 40px;
   }
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-top: 81px;
+    width: 416px;
+  }
 }
 
 .hero__slogan {
@@ -47,13 +54,23 @@
     margin-bottom: 21px;
     text-align: left;
     margin-left: 90px;
-
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 80px;
+}
 }
 
 .hero__image-wrapper {
   @media (min-width: $tablet-width) {
   position: relative;
+  }
+  
+}
+
+.hero__image {
+  @media (min-width: $desktop-width) {
+ 
 }
 }
 
@@ -65,5 +82,9 @@
     position: absolute;
     top: 29px;
     left: 90px;
-}
+  }
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 80px;
+  }
 }

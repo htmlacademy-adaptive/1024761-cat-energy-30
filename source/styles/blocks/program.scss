@@ -15,6 +15,19 @@
   }
 }
 
+.program__box {
+  width: 100%;
+  background-color: $bg-basic-grey;
+  padding: 24px 20px 18px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+  }
+}
+
 .program__box--slim {
   background-image: url("../../images/icons/stack.svg#cat_sit_mobile");
   background-repeat: no-repeat;
@@ -99,11 +112,4 @@
   }
 }
 
-.program__box {
-  width: 100%;
-  background-color: $bg-basic-grey;
-  padding: 24px 20px 18px 20px;
-  @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
-}
-}
+

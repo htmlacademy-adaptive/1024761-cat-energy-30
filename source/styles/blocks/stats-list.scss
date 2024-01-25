@@ -49,7 +49,10 @@
     font-size: 14px;
     line-height: 14px;
   }
+  @media(min-width: $desktop-width) {
+    background-color: #eaeaea;
  }
+}
 
 .stats-list__description--time {
   width: 80px;
@@ -87,6 +90,9 @@
     grid-template-columns: repeat(2, 162px);
     column-gap: 42px;
     justify-items: left;
+    row-gap: 60px;
+    width: 366px;
+
   }
 }
 
@@ -113,7 +119,10 @@
   }
   @media(min-width: $desktop-width) {
     grid-column: span 2;
-    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 20px;
   }
 }
 
@@ -123,6 +132,7 @@
   }
   @media(min-width: $desktop-width) {
   margin-right: 63px;
+  margin-bottom: 0;
   }
 }
 

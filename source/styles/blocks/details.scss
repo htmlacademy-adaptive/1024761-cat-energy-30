@@ -3,6 +3,10 @@
   padding-bottom: 47px;
   border-bottom: 1px solid #e6e6e6;
   }
+  @media (min-width: $desktop-width) { 
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .details__title {
@@ -36,6 +40,7 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     column-gap: 80px;
+    margin-bottom: 126px;
   }
 }
 
@@ -58,6 +63,10 @@
   background-color: $bg-basic-green;
   background-position: center;
   background-repeat: no-repeat;
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+  }
 
 }
 

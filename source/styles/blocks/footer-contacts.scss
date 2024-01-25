@@ -1,3 +1,7 @@
+.footer-contacts {
+  position: relative;
+}
+
 .footer-contacts__offer {
   color: #111111;
   font-family: $font-family-secondary;
@@ -20,6 +24,14 @@
   @media(min-width: $tablet-width) {
     justify-content: space-between;
     padding: 61px 40px;
+  }
+  @media(min-width: $desktop-width) {
+    position: absolute;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    top: 95px;
+    left: 110px;
   }
 }
 

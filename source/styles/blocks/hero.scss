@@ -1,6 +1,5 @@
 .hero {
-  background-image: linear-gradient($bg-basic-green 75%, #ffffff 25%); 
-  opacity: 0.85;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 75%, #ffffff 25%); 
   color: #ffffff; 
   font-family: $font-family-secondary;
   padding-top: 27px;
@@ -16,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+    
     padding-top: 29px;
     min-height: 580px;
     margin-bottom: 82px;
@@ -79,13 +79,15 @@
     z-index: -1;
   }
   @media (min-width: $desktop-width) {
-    
+    z-index: 0;
     transform: translate(81%, -64%);
     
   }
 }
 
 .hero__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;

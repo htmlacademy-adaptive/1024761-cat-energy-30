@@ -1,3 +1,13 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 132px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
 
 .social-list__link {
   display: block;

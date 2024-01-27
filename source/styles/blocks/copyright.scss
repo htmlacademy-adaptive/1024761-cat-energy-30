@@ -3,3 +3,24 @@
   line-height: 20px;
   color: #444444;
 }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  @media(min-width: $tablet-width) {
+    width: 168px;
+    margin: 0;
+    
+  }
+}
+
+.copyright:hover path {
+  fill: #68B738;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}

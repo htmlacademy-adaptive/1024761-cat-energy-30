@@ -10,11 +10,11 @@
  
   @media (min-width: $tablet-width) {
     background-image: none;
-    background-color: #ffffff;
+    background-color: transparent;
     color: #000000;
     margin-bottom: 0;
     padding-top: 65px;
-    min-height: 975px;;
+    min-height: 975px;
   }
   
   @media (min-width: $desktop-width) {

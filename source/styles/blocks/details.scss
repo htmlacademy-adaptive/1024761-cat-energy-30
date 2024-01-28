@@ -58,7 +58,9 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
     gap: 31px;
-    counter-increment: count 1;
+    counter-increment: number 1;
+    position: relative;
+    min-height: 280px;
   }
 }
 
@@ -120,6 +122,22 @@
   background-image: url("../../images/icons/stack.svg#clock");
   background-size: 26px 31px;
 }
+
+.details__item::after {
+  position: absolute;
+  bottom: 40px;
+  left: 115px;
+  content: counter(number);
+  color: #F2F2F2;
+  text-align: center;
+  font-family: $font-family-secondary;
+  font-size: 280px;
+  font-weight: 400;
+  line-height: 280px; 
+  z-index: -1;
+}
+  
+  
 
 .details__description {
   @media (min-width: $tablet-width) {

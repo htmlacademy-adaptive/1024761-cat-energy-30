@@ -1,7 +1,4 @@
 .main-nav {
-  outline: 5px solid opacify(rgb(198, 250, 9), 0.5);
-  outline-offset: -5px;
-
   position: absolute;
   width: 100%;
   background-color: #ffffff;
@@ -16,5 +13,5 @@
   @media (min-width: $desktop-width) {
     background-color: inherit;
     width: 475px;
-}
+  }
 }

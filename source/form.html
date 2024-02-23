@@ -62,42 +62,42 @@
               <input class="form__control" type="text" name="cat-name" placeholder="Барсик">
             </label>
             <label class="form__label">
-              <span class="form__field-label">Вес(кг):*</span>
+              <span class="form__field-label">Вес (кг):*</span>
               <input class="form__control" type="number" name="cat-weight" placeholder="7">
             </label>
             <label class="form__label">
-              <span class="form__field-label">Возраст(лет):</span>
+              <span class="form__field-label">Возраст&nbsp;(лет):</span>
               <input class="form__control" type="number" name="cat-age" placeholder="7">
             </label>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--radio">
           <fieldset class="form__fieldset form__fieldset--radio container">
             <legend class="visually-hidden">Цель</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label">
-                  <span class="form__field-label">Похудение</span>
+                <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="target" value="slim" checked>
+                  <span class="form__field-label">Похудение</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label">
-                  <span class="form__field-label">Набор массы</span>
+                <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="target" value="pro">
+                  <span class="form__field-label">Набор массы</span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label">
-                  <span class="form__field-label">Не знаю (нужен ваш совет)</span>
+                <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="target" value="no-answer">
+                  <span class="form__field-label">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
       </div>
-      <div class="form__fieldset-wrapper">
+      <div class="form__fieldset-wrapper form__fieldset-wrapper--contact">
         <fieldset class="form__fieldset form__fieldset-contacts container">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <label class="form__label form__label--icon">
@@ -112,42 +112,42 @@
           </label>
         </fieldset>
       </div>
-      <div class="form__fieldset-wrapper">
+      <div class="form__fieldset-wrapper form__fieldset-wrapper--comment">
         <fieldset class="form__fieldset form__fieldset--textarea container">
           <legend class="form__legend">Комментарий</legend>
           <label class="form__label">
             <span class="visually-hidden">О коте</span>
             <textarea class="form__control form__control--textarea" name="actual-cat"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+              placeholder="Расскажите&nbsp;обо&nbsp;всех&nbsp;повадках&nbsp;кота"></textarea>
           </label>
         </fieldset>
       </div>
-      <div class="form__fieldset-wrapper">
+      <div class="form__fieldset-wrapper form__fieldset-wrapper--extra">
         <fieldset class="form__fieldset form__fieldset--checkbox container">
           <legend class="form__legend">Дополнительно:</legend>
           <ul class="form__list form__list-extra">
             <li class="form__item">
-              <label class="form__label checkbox-field">
-                <span class="checkbox-field__label">Сахарозаменитель</span>
+              <label class="form__label checkbox-field">                
                 <input class="checkbox-field__control" type="checkbox" name="sugar" checked>
+                <span class="checkbox-field__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">
-                <span class="checkbox-field__label">Питьевая вода</span>
+              <label class="form__label checkbox-field">                
                 <input class="checkbox-field__control" type="checkbox" name="water">
+                <span class="checkbox-field__label">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">
-                <span class="checkbox-field__label">Молоко</span>
+              <label class="form__label checkbox-field">                
                 <input class="checkbox-field__control" type="checkbox" name="milk">
+                <span class="checkbox-field__label">Молоко</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">
-                <span class="checkbox-field__label">Витамины</span>
+              <label class="form__label checkbox-field">                
                 <input class="checkbox-field__control" type="checkbox" name="vitamins">
+                <span class="checkbox-field__label">Витамины</span>
               </label>
             </li>
           </ul>
@@ -155,12 +155,12 @@
       </div>
       <div class="form__button-wrapper container">
         <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="under-star">* - Обязательные поля</p>
+        <p class="form__under-star">* — Обязательные поля</p>
       </div>
     </form>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer main-footer--form">
     <section class="main-footer__contacts footer-contacts">
       <div class="footer-contacts__wrapper container">
         <p class="footer-contacts__offer">приглашаем <br>к сотрудничеству дилеров!</p>

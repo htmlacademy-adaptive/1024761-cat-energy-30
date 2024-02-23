@@ -5,6 +5,16 @@
   line-height: 18px; 
   text-transform: uppercase;
   margin-bottom: 14px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+.form__label--radio {
+  justify-content: start;
+  gap: 15px;
 }
 
 .form__control {
@@ -13,9 +23,15 @@
   font-weight: 400;
   line-height: 18px; 
   text-transform: uppercase;
-  padding: 14px 49px 13px 15px;
+  padding: 14px 14px 13px 15px;
+  flex-grow: 1;
+  border: 1px solid #cdcdcd;
 }
 
+.form__control--textarea {
+  min-height: 150px;
+
+}
 .form__control--email {
   background-image: url("../../images/icons/stack.svg#email");
   background-repeat: no-repeat;
@@ -37,6 +53,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin-bottom: 35px;
 }
 
 .form__under-star {
@@ -83,4 +100,93 @@
   @media(min-width: $tablet-width) {
     display: flex;
   } 
+}
+
+
+
+.form__fieldset-wrapper {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+}
+
+.form__fieldset-wrapper--radio {
+  margin-bottom: 25px;
+}
+
+.form__fieldset-wrapper--contact {
+  border-bottom: none;
+}
+
+.form__fieldset-wrapper--comment {
+  border-bottom: none;
+}
+
+.form__fieldset-wrapper--extra {
+  border-bottom: none;
+}
+
+.form__list {
+  margin-top: 22px;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.form__radio {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  border-radius: 50%;
+}
+
+.form__radio[type="radio"]:checked::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  top: 1px;
+  left: 1px;
+}
+
+.checkbox-field {
+justify-content: start;
+gap: 15px;
+}
+
+.checkbox-field__control {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox-field__control[type="checkbox"]:checked {
+  background-image: url("../../images/icons/tick_mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+}
+
+.form__button {
+  width: 280px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 21px;
+}
+
+.form__under-star {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32px;
 }

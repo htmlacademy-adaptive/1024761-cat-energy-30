@@ -1,9 +1,10 @@
 .details {
   @media (min-width: $tablet-width) {
-  padding-bottom: 47px;
-  border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
-  @media (min-width: $desktop-width) { 
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -17,6 +18,7 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -30,12 +32,15 @@
   gap: 20px;
   padding: 0;
   margin-bottom: 49px;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 246px);
     row-gap: 77px;
     column-gap: 138px;
     margin-bottom: 0;
+    counter-reset: count 0;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
@@ -48,10 +53,15 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 60px 1fr;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
     gap: 31px;
+    counter-increment: number 1;
+    position: relative;
+    min-height: 280px;
   }
 }
 
@@ -63,17 +73,17 @@
   background-color: $bg-basic-green;
   background-position: center;
   background-repeat: no-repeat;
+
   @media (min-width: $desktop-width) {
     width: 80px;
     height: 80px;
   }
-
 }
 
 .details__item--sheet {
   @media (min-width: $tablet-width) {
-  width: 204px;
-}
+    width: 204px;
+  }
 }
 
 .details__item--sheet::before {
@@ -83,8 +93,8 @@
 
 .details__item--powder {
   @media (min-width: $tablet-width) {
-  width: 224px;
-}
+    width: 224px;
+  }
 }
 
 .details__item--powder::before {
@@ -94,8 +104,8 @@
 
 .details__item--cutlery {
   @media (min-width: $tablet-width) {
-  width: 207px;
-}
+    width: 207px;
+  }
 }
 
 .details__item--cutlery::before {
@@ -105,8 +115,8 @@
 
 .details__item--clock {
   @media (min-width: $tablet-width) {
-  width: 245px;
-}
+    width: 245px;
+  }
 }
 
 .details__item--clock::before {
@@ -114,9 +124,25 @@
   background-size: 26px 31px;
 }
 
+.details__item::after {
+  position: absolute;
+  bottom: 40px;
+  left: 115px;
+  content: counter(number);
+  color: #F2F2F2;
+  text-align: center;
+  font-family: $font-family-secondary;
+  font-size: 280px;
+  font-weight: 400;
+  line-height: 280px; 
+  z-index: -1;
+}
+  
+  
+
 .details__description {
   @media (min-width: $tablet-width) {
-  font-size: 16px;
-  line-height: 24px;
-}
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

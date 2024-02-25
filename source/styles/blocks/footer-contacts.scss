@@ -35,6 +35,13 @@
   }
 }
 
+.footer-contacts__wrapper {
+  @media(min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+}
+
 .footer-contacts__address {
   font-size: 14px;
   font-style: normal;

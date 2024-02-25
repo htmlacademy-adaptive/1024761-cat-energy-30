@@ -13,3 +13,10 @@
     padding: 0 40px;  
   }
 }
+
+.container--form {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

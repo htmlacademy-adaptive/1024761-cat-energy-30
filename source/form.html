@@ -48,14 +48,14 @@
   </header>
 
   <main class="page-container">
-    <div class="page-container-wrapper container">
+    <div class="page-container-wrapper container container--form">
       <h1 class="page-container__title title-inner">Подбор программы</h1>
       <p class="page-container__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__wrapper">
         <div class="form__fieldset-wrapper">
-          <fieldset class="form__fieldset container">
+          <fieldset class="form__fieldset container container--form">
             <legend class="visually-hidden">Данные о животном</legend>
             <label class="form__label">
               <span class="form__field-label">Имя:</span>
@@ -72,7 +72,7 @@
           </fieldset>
         </div>
         <div class="form__fieldset-wrapper form__fieldset-wrapper--radio">
-          <fieldset class="form__fieldset form__fieldset--radio container">
+          <fieldset class="form__fieldset form__fieldset--radio container container--form">
             <legend class="visually-hidden">Цель</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -98,24 +98,26 @@
         </div>
       </div>
       <div class="form__fieldset-wrapper form__fieldset-wrapper--contact">
-        <fieldset class="form__fieldset form__fieldset-contacts container">
+        <fieldset class="form__fieldset form__fieldset-contacts ">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <label class="form__label form__label--icon">
-            <span class="form__field-label">email:*</span>
-            <input class="form__control form__control--email" type="email" name="owner-name"
-              placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__label form__label--icon">
-            <span class="form__field-label">телефон:</span>
-            <input class="form__control form__control--phone" type="tel" name="owner-phone"
-              placeholder="8 (960) 900-60-90">
-          </label>
+          <div class="form__label-wrapper container container--form">
+            <label class="form__label form__label--icon ">
+              <span class="form__field-label">email:*</span>
+              <input class="form__control form__control--email" type="email" name="owner-name"
+                placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__label form__label--icon">
+              <span class="form__field-label">телефон:</span>
+              <input class="form__control form__control--phone" type="tel" name="owner-phone"
+                placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
       </div>
       <div class="form__fieldset-wrapper form__fieldset-wrapper--comment">
-        <fieldset class="form__fieldset form__fieldset--textarea container">
+        <fieldset class="form__fieldset form__fieldset--textarea ">
           <legend class="form__legend">Комментарий</legend>
-          <label class="form__label">
+          <label class="form__label container container--form">
             <span class="visually-hidden">О коте</span>
             <textarea class="form__control form__control--textarea" name="actual-cat"
               placeholder="Расскажите&nbsp;обо&nbsp;всех&nbsp;повадках&nbsp;кота"></textarea>
@@ -123,29 +125,29 @@
         </fieldset>
       </div>
       <div class="form__fieldset-wrapper form__fieldset-wrapper--extra">
-        <fieldset class="form__fieldset form__fieldset--checkbox container">
+        <fieldset class="form__fieldset form__fieldset--checkbox">
           <legend class="form__legend">Дополнительно:</legend>
-          <ul class="form__list form__list-extra">
+          <ul class="form__list form__list-extra container container--form">
             <li class="form__item">
-              <label class="form__label checkbox-field">                
+              <label class="form__label checkbox-field">
                 <input class="checkbox-field__control" type="checkbox" name="sugar" checked>
                 <span class="checkbox-field__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">                
+              <label class="form__label checkbox-field">
                 <input class="checkbox-field__control" type="checkbox" name="water">
                 <span class="checkbox-field__label">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">                
+              <label class="form__label checkbox-field">
                 <input class="checkbox-field__control" type="checkbox" name="milk">
                 <span class="checkbox-field__label">Молоко</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label checkbox-field">                
+              <label class="form__label checkbox-field">
                 <input class="checkbox-field__control" type="checkbox" name="vitamins">
                 <span class="checkbox-field__label">Витамины</span>
               </label>
@@ -153,7 +155,7 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__button-wrapper container">
+      <div class="form__button-wrapper container container--form">
         <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__under-star">* — Обязательные поля</p>
       </div>
@@ -162,7 +164,7 @@
 
   <footer class="main-footer main-footer--form">
     <section class="main-footer__contacts footer-contacts">
-      <div class="footer-contacts__wrapper container">
+      <div class="footer-contacts__wrapper footer-contacts__wrapper--form container">
         <p class="footer-contacts__offer">приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="footer-contacts__address">
           <span class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</span>
@@ -189,8 +191,8 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru" aria-label="Иконка ютуба">
+              <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="Иконка ютуба">
               </a>
             </li>
             <li class="social-list__item">

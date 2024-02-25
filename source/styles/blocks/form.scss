@@ -10,11 +10,16 @@
   justify-content: space-between;
   align-items: center;
   gap: 13px;
+  @media(min-width: $tablet-width) {
+  font-size: 20px;
+  margin-bottom: 20px;
+  }
 }
 
 .form__label--radio {
   justify-content: start;
   gap: 15px;
+  margin-bottom: 13px;
 }
 
 .form__control {
@@ -26,10 +31,19 @@
   padding: 14px 14px 13px 15px;
   flex-grow: 1;
   border: 1px solid #cdcdcd;
+  @media(min-width: $tablet-width) {
+      font-size: 20px;
+      padding: 11px 20px;
+}
 }
 
 .form__control--textarea {
   min-height: 150px;
+  @media(min-width: $tablet-width) {
+    min-height: 175px;
+    margin-bottom: 65px;
+    line-height: 30px;
+  }
 
 }
 .form__control--email {
@@ -54,6 +68,11 @@
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 35px;
+  @media(min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__under-star {
@@ -68,6 +87,9 @@
   //display: flex;
  // flex-direction: column;
  border: none;
+ padding: 0;
+ margin: 0;
+
 }
 
 .form__wrapper {
@@ -77,6 +99,10 @@
 }
 
 .form__fieldset-contacts {
+  @media(min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
   @media(min-width: $desktop-width) {
     flex-direction: row;
   }
@@ -88,8 +114,10 @@
   grid-column: 174px;
   
   @media(min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 343px 1fr;
     row-gap: 32px;
+  
+    
   } 
   @media(min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr); 
@@ -99,18 +127,25 @@
 .form__button-wrapper {
   @media(min-width: $tablet-width) {
     display: flex;
+    gap: 60px;
+    align-items: center;
   } 
 }
-
-
 
 .form__fieldset-wrapper {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 10px;
+  @media(min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 .form__fieldset-wrapper--radio {
   margin-bottom: 25px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+}
 }
 
 .form__fieldset-wrapper--contact {
@@ -129,6 +164,13 @@
   margin-top: 22px;
   margin-bottom: 9px;
   padding: 0;
+  @media(min-width: $tablet-width) {
+    margin-top: 42px;
+    padding-left: 27px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    margin-bottom: 25px;
+  }
 }
 
 .form__radio {
@@ -155,38 +197,31 @@
   left: 1px;
 }
 
-.checkbox-field {
-justify-content: start;
-gap: 15px;
-}
-
-.checkbox-field__control {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: 1px solid #cdcdcd;
-}
-
-.checkbox-field__control[type="checkbox"]:checked {
-  background-image: url("../../images/icons/tick_mobile.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 18px 14px;
-}
-
 .form__button {
   width: 280px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 21px;
+  @media(min-width: $tablet-width) {
+    width: 284px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
+  }
 }
 
 .form__under-star {
   text-align: center;
   color: #000000;
   margin-bottom: 32px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--checkbox {
+  @media(min-width: $tablet-width) {
+  margin-bottom: 52px;
+}
 }

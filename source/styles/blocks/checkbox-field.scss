@@ -1,0 +1,31 @@
+.checkbox-field {
+  justify-content: start;
+  gap: 15px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+  
+  .checkbox-field__control {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #cdcdcd;
+    @media(min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  .checkbox-field__control[type="checkbox"]:checked {
+    background-image: url("../../images/icons/tick_mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+    @media(min-width: $tablet-width) {
+      background-size: 24px 19px;
+    }
+  }
